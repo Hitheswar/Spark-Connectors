@@ -9,6 +9,7 @@ object local extends App with SparkApp{
     .option("delimiter", ",")
     .load("H:\\Extras\\DaTA\\ipldata\\matches.csv")
   df.show()
+  df.count()
 
   df.repartition(1).write.format("com.databricks.spark.csv").mode("overwrite")
     .option("delimiter", ",")
