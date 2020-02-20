@@ -27,3 +27,9 @@ libraryDependencies += "org.mongodb.spark" %% "mongo-spark-connector" % "2.4.1"
 
 //Mysql
 libraryDependencies += "mysql" % "mysql-connector-java" % "8.0.17"
+
+//Ignite
+// https://mvnrepository.com/artifact/org.apache.ignite/ignite-core
+libraryDependencies += "org.apache.ignite" % "ignite-core" % "2.7.6"
+// https://mvnrepository.com/artifact/org.apache.ignite/ignite-spark
+libraryDependencies += "org.apache.ignite" % "ignite-spark" % "2.7.6"

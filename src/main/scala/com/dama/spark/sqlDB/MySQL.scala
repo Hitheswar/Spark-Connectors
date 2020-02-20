@@ -1,13 +1,13 @@
 package com.dama.spark.sqlDB
 
 import com.dama.spark.core.SparkApp
-import com.dama.spark.persist.MySqlDB
+import com.dama.spark.services.MySqlService
 import org.apache.spark.sql.SaveMode
 import com.dama.spark.util.Constants.{mysql_url,mysql_usr,mysql_pass}
 
 object MySQL extends App with SparkApp{
 
-  val mysqlObj = MySqlDB.withConnection(mysql_url, mysql_usr,mysql_pass)
+  val mysqlObj = MySqlService.withConnection(mysql_url, mysql_usr,mysql_pass)
 
   val mysql_df = mysqlObj.read(spark,"mysql", "sli_attr").limit(1000)
   mysql_df.show(5)
