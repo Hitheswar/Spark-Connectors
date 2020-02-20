@@ -1,4 +1,4 @@
-package com.dama.spark.nosqlDB
+package com.dama.spark.nosql
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.{ SparkSession, SaveMode}
 object mongoDB extends App {

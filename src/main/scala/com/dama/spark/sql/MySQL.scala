@@ -1,4 +1,4 @@
-package com.dama.spark.sqlDB
+package com.dama.spark.sql
 
 import com.dama.spark.core.SparkApp
 import com.dama.spark.services.MySqlService
