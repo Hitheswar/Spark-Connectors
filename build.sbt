@@ -18,6 +18,12 @@ resolvers ++= Seq(
 libraryDependencies += "org.apache.spark" %% "spark-core" % sparkVersion
 libraryDependencies += "org.apache.spark" %% "spark-sql" % sparkVersion
 
-//cassandra dependeincies
+//cassandra
 libraryDependencies += "com.datastax.spark" %% "spark-cassandra-connector" % "2.4.1"
 libraryDependencies += "com.twitter" % "jsr166e" % "1.1.0"
+
+//MongoDB
+libraryDependencies += "org.mongodb.spark" %% "mongo-spark-connector" % "2.4.1"
+
+//Mysql
+libraryDependencies += "mysql" % "mysql-connector-java" % "8.0.17"
